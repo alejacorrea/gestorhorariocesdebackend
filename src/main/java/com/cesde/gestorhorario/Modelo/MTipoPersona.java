@@ -1,7 +1,7 @@
 package com.cesde.gestorhorario.Modelo;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.DialectOverride;
+
 
 @Entity
 @Table (name = "tipoPersona")
@@ -11,10 +11,10 @@ public class MTipoPersona {
     @Id
     @Column(name = "id_rol")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    Long id;
 
     @Column(nullable = false, length = 40)
-    private String rolPersona;
+    String rolPersona;
 
     public MTipoPersona(Long id, String rolPersona) {
         this.id = id;
