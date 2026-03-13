@@ -20,4 +20,46 @@ public class MAula {
 
     @Column(length = 5, nullable = false)
     Boolean activo;
+
+    public MAula() {
+    }
+
+    public MAula(Integer idaula, String numerodeaula, Integer capacidadaula, Boolean activo) {
+        this.idaula = idaula;
+        this.numerodeaula = numerodeaula;
+        this.capacidadaula = capacidadaula;
+        this.activo = activo;
+    }
+
+    public Integer getIdaula() {
+        return idaula;
+    }
+
+    public void setIdaula(Integer idaula) {
+        this.idaula = idaula;
+    }
+
+    public String getNumerodeaula() {
+        return numerodeaula;
+    }
+
+    public void setNumerodeaula(String numerodeaula) {
+        this.numerodeaula = numerodeaula;
+    }
+
+    public Integer getCapacidadaula() {
+        return capacidadaula;
+    }
+
+    public void setCapacidadaula(Integer capacidadaula) {
+        this.capacidadaula = capacidadaula;
+    }
+
+    public Boolean getActivo() {
+        return activo;
+    }
+
+    public void setActivo(Boolean activo) {
+        this.activo = activo;
+    }
 }
