@@ -16,10 +16,10 @@ public class MPersona {
     @Column(length = 40, nullable = false)
     String nombrePersona;
 
-    @Column(length = 100, nullable = false, unique = true)
+    @Column(length = 40, nullable = false, unique = true)
     String correoPersona;
 
-    @Column(length = 100, nullable = false)
+    @Column(length = 20, nullable = false)
     String contrasenaPersona;
 
     @Column(length = 5)
