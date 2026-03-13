@@ -5,7 +5,6 @@ import org.hibernate.annotations.DialectOverride;
 
 @Entity
 @Table (name = "tipoPersona")
-@DialectOverride.Check(constraints = "rol_persona IN ('Administrador', 'Profesor')")
 
 public class MTipoPersona {
 
