@@ -16,20 +16,20 @@ public class MTipoPersona {
     @Column(nullable = false, length = 40)
     String rolPersona;
 
-    public MTipoPersona(Integer idrol, String rolPersona) {
-        this.idRol = idrol;
+    public MTipoPersona(Integer idRol, String rolPersona) {
+        this.idRol = idRol;
         this.rolPersona = rolPersona;
     }
 
     public MTipoPersona() {
     }
 
-    public Integer getIdrol() {
+    public Integer getIdRol() {
         return idRol;
     }
 
-    public void setIdrol(Integer idrol) {
-        this.idRol = idrol;
+    public void setIdRol(Integer idRol) {
+        this.idRol = idRol;
     }
 
     public String getRolPersona() {
