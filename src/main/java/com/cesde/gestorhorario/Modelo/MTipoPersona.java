@@ -4,32 +4,32 @@ import jakarta.persistence.*;
 
 
 @Entity
-@Table (name = "tipoPersona")
+@Table (name = "tipopersona")
 
 public class MTipoPersona {
 
     @Id
     @Column(name = "id_rol")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    Integer idRol;
 
     @Column(nullable = false, length = 40)
     String rolPersona;
 
-    public MTipoPersona(Long id, String rolPersona) {
-        this.id = id;
+    public MTipoPersona(Integer idrol, String rolPersona) {
+        this.idRol = idrol;
         this.rolPersona = rolPersona;
     }
 
     public MTipoPersona() {
     }
 
-    public Long getId() {
-        return id;
+    public Integer getIdrol() {
+        return idRol;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setIdrol(Integer idrol) {
+        this.idRol = idrol;
     }
 
     public String getRolPersona() {
