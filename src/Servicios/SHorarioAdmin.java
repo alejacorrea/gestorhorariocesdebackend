@@ -12,9 +12,8 @@ public class SHorarioAdmin {
     public SHorarioAdmin(IHorarioProfesor iHorarioProfesor) {
         this.iHorarioProfesor = iHorarioProfesor;
     }
-}
 
-    // Adicion de registros de clientes
+        // Adicion de registros de clientes
     public MHorarioAdmin adicionarHorario(MHorarioAdmin mHorarioAdmin) throws Exception {
         try {
             return iHorarioAdmin.save(mHorarioAdmin);
@@ -22,3 +21,8 @@ public class SHorarioAdmin {
             throw new Exception(error.getMessage());
         }
     }
+}
+
+
+
+
