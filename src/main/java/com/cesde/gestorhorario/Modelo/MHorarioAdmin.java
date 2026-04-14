@@ -11,6 +11,8 @@ public class MHorarioAdmin {
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer idhorario;
     @Column(nullable = false)
+    String nombreProfesor;
+    @Column(nullable = false)
     LocalDate fechainicio;
     @Column(nullable = false)
     LocalDate fechafin;
@@ -29,8 +31,9 @@ public class MHorarioAdmin {
 
     //constructores
 
-    public MHorarioAdmin(Integer idhorario, LocalDate fechainicio, LocalDate fechafin, LocalTime horainicio, LocalTime horafin, LocalDate inicioperiodo, LocalDate finperiodo, String recurrenciadiaadmin, Boolean activo) {
+    public MHorarioAdmin(Integer idhorario, String nombreProfesor, LocalDate fechainicio, LocalDate fechafin, LocalTime horainicio, LocalTime horafin, LocalDate inicioperiodo, LocalDate finperiodo, String recurrenciadiaadmin, Boolean activo) {
         this.idhorario = idhorario;
+        this.nombreProfesor = nombreProfesor;
         this.fechainicio = fechainicio;
         this.fechafin = fechafin;
         this.horainicio = horainicio;
@@ -53,6 +56,13 @@ public class MHorarioAdmin {
 
     public void setIdhorario(Integer idhorario) {
         this.idhorario = idhorario;
+    }
+    public String getNombreProfesor() {
+        return nombreProfesor;
+    }
+
+    public void setNombreProfesor(String nombreProfesor) {
+        this.nombreProfesor = nombreProfesor;
     }
 
     public LocalDate getFechainicio() {
