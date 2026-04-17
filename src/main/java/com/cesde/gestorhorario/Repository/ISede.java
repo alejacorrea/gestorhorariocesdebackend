@@ -8,7 +8,7 @@ import com.cesde.gestorhorario.Modelo.MSede;
 
 @Repository
 public interface ISede extends JpaRepository<MSede, Integer> {
-    List<MSede> findByNombreSede(String nombresede);
+    List<MSede> findByNombresede(String nombresede);
 
 
 }

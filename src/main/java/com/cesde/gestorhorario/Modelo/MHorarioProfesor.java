@@ -5,6 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Entity
 public class MHorarioProfesor {
@@ -12,19 +14,19 @@ public class MHorarioProfesor {
     //Atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id_HorarioProfesor;
+    Integer idHorarioProfesor;
 
     @Column(length = 15, nullable = false)
     String materiaProfesor;
 
     @Column(nullable = false)
-    String fechaInicioProfesor;
+    LocalDate fechaInicioProfesor;
 
     @Column(nullable = false)
-    String horaInicioProfesor;
+    LocalTime horaInicioProfesor;
 
     @Column(nullable = false)
-    String horaFinProfesor;
+    LocalTime horaFinProfesor;
 
     @Column(length = 15, nullable = false)
     String instituto;
@@ -33,7 +35,7 @@ public class MHorarioProfesor {
     String recurrenciaDiaProfesor;
 
     @Column(nullable = false)
-    String fechaFinalizacionProfesor;
+    LocalDate fechaFinalizacionProfesor;
 
     @Column(length = 15, nullable = false)
     String identificacionPersona;
@@ -48,24 +50,24 @@ public class MHorarioProfesor {
         this.activo = activo;
     }
 
-    public void setFechaFinalizacionProfesor(String fechaFinalizacionProfesor) {
+    public void setFechaFinalizacionProfesor(LocalDate fechaFinalizacionProfesor) {
         this.fechaFinalizacionProfesor = fechaFinalizacionProfesor;
     }
 
-    public void setFechaInicioProfesor(String fechaInicioProfesor) {
+    public void setFechaInicioProfesor(LocalDate fechaInicioProfesor) {
         this.fechaInicioProfesor = fechaInicioProfesor;
     }
 
-    public void setHoraFinProfesor(String horaFinProfesor) {
+    public void setHoraFinProfesor(LocalTime horaFinProfesor) {
         this.horaFinProfesor = horaFinProfesor;
     }
 
-    public void setHoraInicioProfesor(String horaInicioProfesor) {
+    public void setHoraInicioProfesor(LocalTime horaInicioProfesor) {
         this.horaInicioProfesor = horaInicioProfesor;
     }
 
-    public void setId_HorarioProfesor(Integer id_HorarioProfesor) {
-        this.id_HorarioProfesor = id_HorarioProfesor;
+    public void setIdHorarioProfesor(Integer idHorarioProfesor) {
+        this.idHorarioProfesor = idHorarioProfesor;
     }
 
     public void setIdentificacionPersona(String identificacionPersona) {
@@ -88,24 +90,24 @@ public class MHorarioProfesor {
         return activo;
     }
 
-    public String getFechaFinalizacionProfesor() {
+    public LocalDate getFechaFinalizacionProfesor() {
         return fechaFinalizacionProfesor;
     }
 
-    public String getFechaInicioProfesor() {
+    public LocalDate getFechaInicioProfesor() {
         return fechaInicioProfesor;
     }
 
-    public String getHoraFinProfesor() {
+    public LocalTime getHoraFinProfesor() {
         return horaFinProfesor;
     }
 
-    public String getHoraInicioProfesor() {
+    public LocalTime getHoraInicioProfesor() {
         return horaInicioProfesor;
     }
 
-    public Integer getId_HorarioProfesor() {
-        return id_HorarioProfesor;
+    public Integer getIdHorarioProfesor() {
+        return idHorarioProfesor;
     }
 
     public String getIdentificacionPersona() {

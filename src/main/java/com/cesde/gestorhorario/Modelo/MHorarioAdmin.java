@@ -10,22 +10,31 @@ public class MHorarioAdmin {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer idhorario;
+
     @Column(nullable = false)
     String nombreProfesor;
+
     @Column(nullable = false)
     LocalDate fechainicio;
+
     @Column(nullable = false)
     LocalDate fechafin;
+
     @Column(nullable = false)
     LocalTime horainicio;
+
     @Column(nullable = false)
     LocalTime horafin;
+
     @Column(nullable = false)
     LocalDate inicioperiodo;
+
     @Column(nullable = false)
     LocalDate finperiodo;
+
     @Column(length = 15)
     String recurrenciadiaadmin;
+    
     @Column(length = 5)
     Boolean activo;
 

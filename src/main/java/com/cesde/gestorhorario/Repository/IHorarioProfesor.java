@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface IHorarioProfesor extends JpaRepository<MHorarioProfesor, Integer> {
-    List<MHorarioProfesor> findByMateria(String materia);
+    List<MHorarioProfesor> findByMateriaProfesor(String materiaProfesor);
 
 }

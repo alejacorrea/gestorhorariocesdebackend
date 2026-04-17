@@ -52,7 +52,7 @@ public class SMateria {
     // consulta por nombre de materia
     public List<MMateria> consultaPorNombreDeMateria(String nombremateria) throws Exception {
         try {
-            return iMateria.findByNombreMateria(nombremateria);
+            return iMateria.findByNombremateria(nombremateria);
         } catch (Exception error) {
             throw new Exception(error.getMessage());
         }
