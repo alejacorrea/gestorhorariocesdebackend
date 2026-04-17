@@ -18,7 +18,7 @@ public class SHorarioProfesor {
         this.iHorarioProfesor = iHorarioProfesor;
     }
 
-        // Adicion de registros de clientes
+        // Adicion de registros de horario profesor
     public MHorarioProfesor adicionarHorario(MHorarioProfesor mHorarioProfesor) throws Exception {
         try {
             return iHorarioProfesor.save(mHorarioProfesor);
@@ -27,8 +27,8 @@ public class SHorarioProfesor {
         }
     }
 
-    // consulta general de registros de clientes
-    public List<MHorarioProfesor> consultaGeneralCliente() throws Exception {
+    // consulta general de registros de horario profesor
+    public List<MHorarioProfesor> consultaGeneralHorarioProfesor() throws Exception {
         try {
             return iHorarioProfesor.findAll();
         } catch (Exception error) {
@@ -37,9 +37,9 @@ public class SHorarioProfesor {
     }
 
     // consulta individual por llave primaria
-    public MHorarioProfesor consultaIndividualId(Integer id_HorarioProfesor) throws Exception {
+    public MHorarioProfesor consultaIndividualId(Integer idHorarioProfesor) throws Exception {
         try {
-            Optional<MHorarioProfesor> registroEncontrado = iHorarioProfesor.findById(id_HorarioProfesor);
+            Optional<MHorarioProfesor> registroEncontrado = iHorarioProfesor.findById(idHorarioProfesor);
             if (registroEncontrado.isPresent())
                 return registroEncontrado.get();
             else
@@ -50,22 +50,21 @@ public class SHorarioProfesor {
     }
 
     // consulta por materia
-    public List<MHorarioProfesor> consultaPorMateriHorarioProfesors(String materia) throws Exception {
+    public List<MHorarioProfesor> consultaPorMateriaHorarioProfesor(String materiaProfesor) throws Exception {
         try {
-            return iHorarioProfesor.findByMateria(materia);
+            return iHorarioProfesor.findByMateriaProfesor(materiaProfesor);
         } catch (Exception error) {
             throw new Exception(error.getMessage());
         }
     }
 
     // modificar un horario de un profesor
-    public MHorarioProfesor modificarHorario(Integer id_HorarioProfesor
-, MHorarioProfesor mHorarioProfesor) throws Exception {
+    public MHorarioProfesor modificarHorario(Integer idHorarioProfesor, MHorarioProfesor mHorarioProfesor) throws Exception {
         try {
-            Optional<MHorarioProfesor> registroEncontrado = iHorarioProfesor.findById(id_HorarioProfesor);
+            Optional<MHorarioProfesor> registroEncontrado = iHorarioProfesor.findById(idHorarioProfesor);
             if (registroEncontrado.isPresent()) {
                 MHorarioProfesor nuevoRegistro = registroEncontrado.get();
-                nuevoRegistro.setId_HorarioProfesor(mHorarioProfesor.getId_HorarioProfesor());
+                nuevoRegistro.setIdHorarioProfesor(mHorarioProfesor.getIdHorarioProfesor());
                 nuevoRegistro.setMateriaProfesor(mHorarioProfesor.getMateriaProfesor());
                 nuevoRegistro.setFechaInicioProfesor(mHorarioProfesor.getFechaInicioProfesor());
                 nuevoRegistro.setFechaFinalizacionProfesor(mHorarioProfesor.getFechaFinalizacionProfesor());
@@ -83,12 +82,12 @@ public class SHorarioProfesor {
         }
     }
 
-    // eliminar un registro de cliente
-    public boolean eliminarHorario(Integer id_HorarioProfesor) throws Exception {
+    // eliminar un registro de horario profesor
+    public boolean eliminarHorario(Integer idHorarioProfesor) throws Exception {
         try {
-            Optional<MHorarioProfesor> registroEncontrado = iHorarioProfesor.findById(id_HorarioProfesor);
+            Optional<MHorarioProfesor> registroEncontrado = iHorarioProfesor.findById(idHorarioProfesor);
             if (registroEncontrado.isPresent()) {
-                iHorarioProfesor.deleteById(id_HorarioProfesor);
+                iHorarioProfesor.deleteById(idHorarioProfesor);
                 return true;
             } else
                 throw new Exception("No se puede eliminar por que  el Horario de profesor no esta registrado");
@@ -98,10 +97,10 @@ public class SHorarioProfesor {
         }
     }
 
-    // anular registro de cliente
-    public MHorarioProfesor anularHorario(Integer id_HorarioProfesor, MHorarioProfesor mHorarioProfesor) throws Exception {
+    // anular registro de horario profesor
+    public MHorarioProfesor anularHorario(Integer idHorarioProfesor, MHorarioProfesor mHorarioProfesor) throws Exception {
         try{
-            Optional<MHorarioProfesor> registroEncontrado=iHorarioProfesor.findById(id_HorarioProfesor);
+            Optional<MHorarioProfesor> registroEncontrado=iHorarioProfesor.findById(idHorarioProfesor);
             if(registroEncontrado.isPresent()) {
                 MHorarioProfesor nuevoRegistro=registroEncontrado.get();
                 nuevoRegistro.setActivo(mHorarioProfesor.getActivo());

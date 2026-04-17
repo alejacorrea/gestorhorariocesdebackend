@@ -8,7 +8,7 @@ import com.cesde.gestorhorario.Modelo.MAula;
 
 @Repository
 public interface IAula extends JpaRepository<MAula, Integer> {
-    List<MAula> findByNumeroDeAula(String numerodeaula);
+    List<MAula> findByNumerodeaula(String numerodeaula);
 
 
 }

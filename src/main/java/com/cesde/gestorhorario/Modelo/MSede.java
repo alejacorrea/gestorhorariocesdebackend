@@ -2,6 +2,8 @@ package com.cesde.gestorhorario.Modelo;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -9,7 +11,7 @@ import jakarta.persistence.Table;
 @Table(name = "sede")
 public class MSede {
     @Id
-    @Column(nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer idsede;
 
     @Column(length = 20, nullable = false)

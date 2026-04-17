@@ -50,10 +50,10 @@ public class SSede {
         }
     }
 
-    // consulta por nombre de sed
+    // consulta por nombre de sede
     public List<MSede> consultaPorNombreDeSede(String nombresede) throws Exception {
         try {
-            return iSede.findByNombreSede(nombresede);
+            return iSede.findByNombresede(nombresede);
         } catch (Exception error) {
             throw new Exception(error.getMessage());
         }

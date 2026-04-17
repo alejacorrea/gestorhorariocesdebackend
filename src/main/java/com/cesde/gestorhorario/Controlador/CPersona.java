@@ -1,26 +1,26 @@
 package com.cesde.gestorhorario.Controlador;
 
-import com.cesde.gestorhorario.Modelo.MHorarioProfesor;
-import com.cesde.gestorhorario.Services.SHorarioProfesor;
+import com.cesde.gestorhorario.Modelo.MPersona;
+import com.cesde.gestorhorario.Services.SPersona;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/horarioprofesor")
-public class CHorarioProfesor {
+@RequestMapping("/persona")
+public class CPersona {
 
     @Autowired
-    SHorarioProfesor sHorarioProfesor;
+    SPersona sPersona;
 
-    // Adición de registros de horario
+    // Adición de registros de persona
     @PostMapping
-    public ResponseEntity<?> adicionarHorario(@RequestBody MHorarioProfesor mHorarioProfesor) throws Exception {
+    public ResponseEntity<?> adicionarPersona(@RequestBody MPersona mPersona) throws Exception {
         try {
             return ResponseEntity
                     .status(HttpStatus.CREATED)
-                    .body(this.sHorarioProfesor.adicionarHorario(mHorarioProfesor));
+                    .body(this.sPersona.adicionarPersona(mPersona));
         } catch (Exception error) {
             return ResponseEntity
                     .status(HttpStatus.BAD_REQUEST)
@@ -28,13 +28,13 @@ public class CHorarioProfesor {
         }
     }
 
-    // Consulta general de horarios
+    // Consulta general de personas
     @GetMapping
-    public ResponseEntity<?> consultaGeneralHorario() throws Exception {
+    public ResponseEntity<?> consultaGeneralPersona() throws Exception {
         try {
             return ResponseEntity
                     .status(HttpStatus.OK)
-                    .body(this.sHorarioProfesor.consultaGeneralHorarioProfesor());
+                    .body(this.sPersona.consultaGeneralPersona());
         } catch (Exception error) {
             return ResponseEntity
                     .status(HttpStatus.BAD_REQUEST)
@@ -42,13 +42,13 @@ public class CHorarioProfesor {
         }
     }
 
-    // Consulta individual por llave primaria (Integer)
-    @GetMapping("/{idHorarioProfesor}")
-    public ResponseEntity<?> consultaIndividualId(@PathVariable Integer idHorarioProfesor) throws Exception {
+    // Consulta individual por llave primaria (identificacionpersona)
+    @GetMapping("/{identificacionpersona}")
+    public ResponseEntity<?> consultaIndividualId(@PathVariable String identificacionpersona) throws Exception {
         try {
             return ResponseEntity
                     .status(HttpStatus.OK)
-                    .body(this.sHorarioProfesor.consultaIndividualId(idHorarioProfesor));
+                    .body(this.sPersona.consultaIndividualId(identificacionpersona));
         } catch (Exception error) {
             return ResponseEntity
                     .status(HttpStatus.BAD_REQUEST)
@@ -56,13 +56,13 @@ public class CHorarioProfesor {
         }
     }
 
-    // Consulta por materia
-    @GetMapping("/materia/{materiaProfesor}")
-    public ResponseEntity<?> consultaPorMateriaHorarioProfesor(@PathVariable String materiaProfesor) throws Exception {
+    // Consulta por nombre de persona
+    @GetMapping("/nombre/{nombrepersona}")
+    public ResponseEntity<?> consultaPorNombreDePersona(@PathVariable String nombrepersona) throws Exception {
         try {
             return ResponseEntity
                     .status(HttpStatus.OK)
-                    .body(this.sHorarioProfesor.consultaPorMateriaHorarioProfesor(materiaProfesor));
+                    .body(this.sPersona.consultaPorNombreDePersona(nombrepersona));
         } catch (Exception error) {
             return ResponseEntity
                     .status(HttpStatus.BAD_REQUEST)
@@ -70,13 +70,13 @@ public class CHorarioProfesor {
         }
     }
 
-    // Modificar un registro de horario
-    @PutMapping("/{idHorarioProfesor}")
-    public ResponseEntity<?> modificarHorario(@PathVariable Integer idHorarioProfesor, @RequestBody MHorarioProfesor mHorarioProfesor) throws Exception {
+    // Modificar un registro de persona
+    @PutMapping("/{identificacionpersona}")
+    public ResponseEntity<?> modificarPersona(@PathVariable String identificacionpersona, @RequestBody MPersona mPersona) throws Exception {
         try {
             return ResponseEntity
                     .status(HttpStatus.OK)
-                    .body(this.sHorarioProfesor.modificarHorario(idHorarioProfesor, mHorarioProfesor));
+                    .body(this.sPersona.modificarPersona(identificacionpersona, mPersona));
         } catch (Exception error) {
             return ResponseEntity
                     .status(HttpStatus.BAD_REQUEST)
@@ -84,13 +84,13 @@ public class CHorarioProfesor {
         }
     }
 
-    // Eliminar un registro de horario
-    @DeleteMapping("/{idHorarioProfesor}")
-    public ResponseEntity<?> eliminarHorario(@PathVariable Integer idHorarioProfesor) throws Exception {
+    // Eliminar un registro de persona
+    @DeleteMapping("/{identificacionpersona}")
+    public ResponseEntity<?> eliminarPersona(@PathVariable String identificacionpersona) throws Exception {
         try {
             return ResponseEntity
                     .status(HttpStatus.OK)
-                    .body(this.sHorarioProfesor.eliminarHorario(idHorarioProfesor));
+                    .body(this.sPersona.eliminarPersona(identificacionpersona));
         } catch (Exception error) {
             return ResponseEntity
                     .status(HttpStatus.BAD_REQUEST)
@@ -98,13 +98,13 @@ public class CHorarioProfesor {
         }
     }
 
-    // Anular registro
-    @PutMapping("/anular/{idHorarioProfesor}")
-    public ResponseEntity<?> anularHorario(@PathVariable Integer idHorarioProfesor, @RequestBody MHorarioProfesor mHorarioProfesor) throws Exception {
+    // Anular registro de persona (Inactivación lógica)
+    @PutMapping("/anular/{identificacionpersona}")
+    public ResponseEntity<?> anularPersona(@PathVariable String identificacionpersona, @RequestBody MPersona mPersona) throws Exception {
         try {
             return ResponseEntity
                     .status(HttpStatus.OK)
-                    .body(this.sHorarioProfesor.anularHorario(idHorarioProfesor, mHorarioProfesor));
+                    .body(this.sPersona.anularPersona(identificacionpersona, mPersona));
         } catch (Exception error) {
             return ResponseEntity
                     .status(HttpStatus.BAD_REQUEST)

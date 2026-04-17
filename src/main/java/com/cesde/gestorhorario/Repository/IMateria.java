@@ -8,6 +8,6 @@ import com.cesde.gestorhorario.Modelo.MMateria;
 
 @Repository
 public interface IMateria extends JpaRepository<MMateria, Integer> {
-    List<MMateria> findByNombreMateria(String nombremateria);
+    List<MMateria> findByNombremateria(String nombremateria);
 
 }

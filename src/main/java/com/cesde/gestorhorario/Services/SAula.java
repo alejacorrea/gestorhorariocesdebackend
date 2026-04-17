@@ -53,7 +53,7 @@ public class SAula {
     // consulta por numero de aula
     public List<MAula> consultaPorNumeroDeAula(String numerodeaula) throws Exception {
         try {
-            return iAula.findByNumeroDeAula(numerodeaula);
+            return iAula.findByNumerodeaula(numerodeaula);
         } catch (Exception error) {
             throw new Exception(error.getMessage());
         }
