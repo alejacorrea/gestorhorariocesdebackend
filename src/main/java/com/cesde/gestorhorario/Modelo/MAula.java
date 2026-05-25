@@ -1,10 +1,17 @@
 package com.cesde.gestorhorario.Modelo;
 
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -12,6 +19,7 @@ import jakarta.persistence.Table;
 public class MAula {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_aula")
     Integer idaula;
 
     @Column(length = 20, nullable = false)
@@ -22,6 +30,15 @@ public class MAula {
 
     @Column(length = 5, nullable = false)
     Boolean activo;
+
+    // relaciones
+    @ManyToOne
+    @JoinColumn(name = "id_sede", referencedColumnName = "id_sede")
+    MSede sede;
+
+    @OneToMany(mappedBy = "aula")
+    @JsonIgnore
+    List<MHorarioAdmin> horariosAdmin;
 
     public MAula() {
     }
@@ -63,5 +80,21 @@ public class MAula {
 
     public void setActivo(Boolean activo) {
         this.activo = activo;
+    }
+
+    public MSede getSede() {
+        return sede;
+    }
+
+    public void setSede(MSede sede) {
+        this.sede = sede;
+    }
+
+    public List<MHorarioAdmin> getHorariosAdmin() {
+        return horariosAdmin;
+    }
+
+    public void setHorariosAdmin(List<MHorarioAdmin> horariosAdmin) {
+        this.horariosAdmin = horariosAdmin;
     }
 }

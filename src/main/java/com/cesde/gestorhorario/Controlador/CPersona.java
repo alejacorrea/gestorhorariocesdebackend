@@ -27,6 +27,7 @@ public class CPersona {
                     .body(error.getMessage());
         }
     }
+    
 
     // Consulta general de personas
     @GetMapping
