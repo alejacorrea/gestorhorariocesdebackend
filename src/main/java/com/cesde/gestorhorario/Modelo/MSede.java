@@ -1,10 +1,15 @@
 package com.cesde.gestorhorario.Modelo;
 
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -12,6 +17,7 @@ import jakarta.persistence.Table;
 public class MSede {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_sede")
     Integer idsede;
 
     @Column(length = 20, nullable = false)
@@ -19,6 +25,15 @@ public class MSede {
 
     @Column(length = 5, nullable = false)
     Boolean activo;
+
+    // relaciones
+    @OneToMany(mappedBy = "sede")
+    @JsonIgnore
+    List<MAula> aulas;
+
+    @OneToMany(mappedBy = "sede")
+    @JsonIgnore
+    List<MHorarioAdmin> horariosAdmin;
 
     public MSede() {
     }
@@ -51,5 +66,21 @@ public class MSede {
 
     public void setActivo(Boolean activo) {
         this.activo = activo;
+    }
+
+    public List<MAula> getAulas() {
+        return aulas;
+    }
+
+    public void setAulas(List<MAula> aulas) {
+        this.aulas = aulas;
+    }
+
+    public List<MHorarioAdmin> getHorariosAdmin() {
+        return horariosAdmin;
+    }
+
+    public void setHorariosAdmin(List<MHorarioAdmin> horariosAdmin) {
+        this.horariosAdmin = horariosAdmin;
     }
 }

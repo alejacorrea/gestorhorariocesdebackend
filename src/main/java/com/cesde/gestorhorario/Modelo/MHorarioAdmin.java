@@ -38,6 +38,23 @@ public class MHorarioAdmin {
     @Column(length = 5)
     Boolean activo;
 
+    // relaciones
+    @ManyToOne
+    @JoinColumn(name = "identificacion_persona", referencedColumnName = "identificacion_persona")
+    MPersona persona;
+
+    @ManyToOne
+    @JoinColumn(name = "id_sede", referencedColumnName = "id_sede")
+    MSede sede;
+
+    @ManyToOne
+    @JoinColumn(name = "id_aula", referencedColumnName = "id_aula")
+    MAula aula;
+
+    @ManyToOne
+    @JoinColumn(name = "id_materia", referencedColumnName = "id_materia")
+    MMateria materia;
+
     //constructores
 
     public MHorarioAdmin(Integer idhorario, String nombreProfesor, LocalDate fechainicio, LocalDate fechafin, LocalTime horainicio, LocalTime horafin, LocalDate inicioperiodo, LocalDate finperiodo, String recurrenciadiaadmin, Boolean activo) {
@@ -136,5 +153,37 @@ public class MHorarioAdmin {
 
     public void setActivo(Boolean activo) {
         this.activo = activo;
+    }
+
+    public MPersona getPersona() {
+        return persona;
+    }
+
+    public void setPersona(MPersona persona) {
+        this.persona = persona;
+    }
+
+    public MSede getSede() {
+        return sede;
+    }
+
+    public void setSede(MSede sede) {
+        this.sede = sede;
+    }
+
+    public MAula getAula() {
+        return aula;
+    }
+
+    public void setAula(MAula aula) {
+        this.aula = aula;
+    }
+
+    public MMateria getMateria() {
+        return materia;
+    }
+
+    public void setMateria(MMateria materia) {
+        this.materia = materia;
     }
 }

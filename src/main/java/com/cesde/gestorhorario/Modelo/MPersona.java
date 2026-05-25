@@ -1,8 +1,15 @@
 package com.cesde.gestorhorario.Modelo;
 
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -24,6 +31,23 @@ public class MPersona {
 
     @Column(length = 5)
     Boolean activo;
+
+    //relaciones
+    @ManyToOne
+    @JoinColumn(name = "id_rol", referencedColumnName = "id_rol")
+    MTipoPersona tipoPersona;
+
+    @OneToMany(mappedBy = "persona")
+    @JsonIgnore
+    List<MHorarioProfesor> horariosProfesor;
+
+    @OneToMany(mappedBy = "persona")
+    @JsonIgnore
+    List<MHorarioAdmin> horariosAdmin;
+
+    
+
+
 
     public MPersona(String identificacionPersona, String nombrePersona, String correoPersona, String contrasenaPersona, Boolean activo) {
         this.identificacionPersona = identificacionPersona;
@@ -74,5 +98,29 @@ public class MPersona {
 
     public void setActivo(Boolean activo) {
         this.activo = activo;
+    }
+
+    public MTipoPersona getTipoPersona() {
+        return tipoPersona;
+    }
+
+    public void setTipoPersona(MTipoPersona tipoPersona) {
+        this.tipoPersona = tipoPersona;
+    }
+
+    public List<MHorarioProfesor> getHorariosProfesor() {
+        return horariosProfesor;
+    }
+
+    public void setHorariosProfesor(List<MHorarioProfesor> horariosProfesor) {
+        this.horariosProfesor = horariosProfesor;
+    }
+
+    public List<MHorarioAdmin> getHorariosAdmin() {
+        return horariosAdmin;
+    }
+
+    public void setHorariosAdmin(List<MHorarioAdmin> horariosAdmin) {
+        this.horariosAdmin = horariosAdmin;
     }
 }

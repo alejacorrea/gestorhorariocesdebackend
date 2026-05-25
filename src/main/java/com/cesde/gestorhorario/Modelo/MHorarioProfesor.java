@@ -2,9 +2,11 @@ package com.cesde.gestorhorario.Modelo;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -37,8 +39,18 @@ public class MHorarioProfesor {
     @Column(nullable = false)
     LocalDate fechaFinalizacionProfesor;
 
-    @Column(length = 15, nullable = false)
+    @Column(name = "identificacion_persona", length = 15, nullable = false)
     String identificacionPersona;
+
+    // relaciones
+    @ManyToOne
+    @JoinColumn(
+        name = "identificacion_persona",
+        referencedColumnName = "identificacion_persona",
+        insertable = false,
+        updatable = false
+    )
+    MPersona persona;
 
     @Column(nullable = false)
     Boolean activo;
@@ -124,5 +136,13 @@ public class MHorarioProfesor {
 
     public String getRecurrenciaDiaProfesor() {
         return recurrenciaDiaProfesor;
+    }
+
+    public MPersona getPersona() {
+        return persona;
+    }
+
+    public void setPersona(MPersona persona) {
+        this.persona = persona;
     }
 }

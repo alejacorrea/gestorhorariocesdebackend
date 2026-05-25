@@ -1,5 +1,9 @@
 package com.cesde.gestorhorario.Modelo;
 
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.*;
 
 
@@ -15,6 +19,12 @@ public class MTipoPersona {
 
     @Column(nullable = false, length = 40)
     String rolPersona;
+
+    //relaciones
+    @OneToMany(mappedBy = "tipoPersona")
+    @JsonIgnore
+    List<MPersona> persona;
+
 
     public MTipoPersona(Integer idRol, String rolPersona) {
         this.idRol = idRol;

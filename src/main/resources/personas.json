@@ -1,0 +1,394 @@
+[
+ {
+    "identificacionPersona": "1001112233",
+    "nombrePersona": "Laura Sofía Gómez",
+    "correoPersona": "lgomez@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1002223344",
+    "nombrePersona": "Andrés Felipe Torres",
+    "correoPersona": "aftorres@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1003334455",
+    "nombrePersona": "María Camila Herrera",
+    "correoPersona": "mcherrera@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1004445566",
+    "nombrePersona": "Juan Pablo Martínez",
+    "correoPersona": "jpmartinez@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1005556677",
+    "nombrePersona": "Valentina Ríos",
+    "correoPersona": "vrios@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1006667788",
+    "nombrePersona": "Santiago Vargas",
+    "correoPersona": "svargas@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1007778899",
+    "nombrePersona": "Isabella Moreno",
+    "correoPersona": "imoreno@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1008889900",
+    "nombrePersona": "Sebastián Castro",
+    "correoPersona": "scastro@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1009990011",
+    "nombrePersona": "Daniela Ospina",
+    "correoPersona": "dospina@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1011001122",
+    "nombrePersona": "Nicolás Peña",
+    "correoPersona": "npena@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1012112233",
+    "nombrePersona": "Sara Jiménez",
+    "correoPersona": "sjimenez@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1013223344",
+    "nombrePersona": "David Salcedo",
+    "correoPersona": "dsalcedo@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1014334455",
+    "nombrePersona": "Luisa Fernanda Bedoya",
+    "correoPersona": "lfbedoya@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1015445566",
+    "nombrePersona": "Alejandro Duque",
+    "correoPersona": "aduque@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1016556677",
+    "nombrePersona": "Natalia Ángel",
+    "correoPersona": "nangel@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1017667788",
+    "nombrePersona": "Mateo Cardona",
+    "correoPersona": "mcardona@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1018778899",
+    "nombrePersona": "Ana María Londoño",
+    "correoPersona": "amlondono@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1019889900",
+    "nombrePersona": "Felipe Arbeláez",
+    "correoPersona": "farbelaez@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1021001122",
+    "nombrePersona": "Juliana Cano",
+    "correoPersona": "jcano@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1022112233",
+    "nombrePersona": "Tomás Estrada",
+    "correoPersona": "testrada@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1023223344",
+    "nombrePersona": "Manuela Gallego",
+    "correoPersona": "mgallego@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1024334455",
+    "nombrePersona": "Camilo Hurtado",
+    "correoPersona": "churtado@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1025445566",
+    "nombrePersona": "Paola Isaza",
+    "correoPersona": "pisaza@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1026556677",
+    "nombrePersona": "Ricardo Jaramillo",
+    "correoPersona": "rjaramillo@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1027667788",
+    "nombrePersona": "Catalina López",
+    "correoPersona": "calopez@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1028778899",
+    "nombrePersona": "Esteban Mejía",
+    "correoPersona": "emejia@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1029889900",
+    "nombrePersona": "Diana Naranjo",
+    "correoPersona": "dnaranjo@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1031001122",
+    "nombrePersona": "Cristian Ocampo",
+    "correoPersona": "cocampo@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1032112233",
+    "nombrePersona": "Verónica Patiño",
+    "correoPersona": "vpatino@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1033223344",
+    "nombrePersona": "Johan Quintero",
+    "correoPersona": "jquintero@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1034334455",
+    "nombrePersona": "Lina Robledo",
+    "correoPersona": "lrobledo@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1035445566",
+    "nombrePersona": "Iván Sierra",
+    "correoPersona": "isierra@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1036556677",
+    "nombrePersona": "Adriana Tobón",
+    "correoPersona": "atobon@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1037667788",
+    "nombrePersona": "Harold Uribe",
+    "correoPersona": "huribe@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1038778899",
+    "nombrePersona": "Marcela Velásquez",
+    "correoPersona": "mvelasquez@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1039889900",
+    "nombrePersona": "Germán Zapata",
+    "correoPersona": "gzapata@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1041001122",
+    "nombrePersona": "Estefanía Aguirre",
+    "correoPersona": "eaguirre@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1042112233",
+    "nombrePersona": "Mauricio Bermúdez",
+    "correoPersona": "mbermudez@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1043223344",
+    "nombrePersona": "Gloria Castaño",
+    "correoPersona": "gcastano@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1044334455",
+    "nombrePersona": "Óscar Díaz",
+    "correoPersona": "odiaz@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1045445566",
+    "nombrePersona": "Yesenia Echeverri",
+    "correoPersona": "yecheverri@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1046556677",
+    "nombrePersona": "Jorge Flórez",
+    "correoPersona": "jflorez@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1047667788",
+    "nombrePersona": "Ángela Gutiérrez",
+    "correoPersona": "agutierrez@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1048778899",
+    "nombrePersona": "Edison Henao",
+    "correoPersona": "ehenao@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1049889900",
+    "nombrePersona": "Tatiana Ibáñez",
+    "correoPersona": "tibanez@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1051001122",
+    "nombrePersona": "Wilson Loaiza",
+    "correoPersona": "wloaiza@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1052112233",
+    "nombrePersona": "Bibiana Muñoz",
+    "correoPersona": "bmunoz@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1053223344",
+    "nombrePersona": "Jhon Noreña",
+    "correoPersona": "jnorena@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  },
+  {
+    "identificacionPersona": "1054334455",
+    "nombrePersona": "Claudia Palacio",
+    "correoPersona": "cpalacio@cesde.edu.co",
+    "contrasenaPersona": "Cesde2026*",
+    "activo": true,
+    "tipoPersona": { "idRol": 2 }
+  }
+]
