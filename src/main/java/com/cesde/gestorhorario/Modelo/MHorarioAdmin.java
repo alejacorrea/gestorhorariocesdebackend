@@ -32,7 +32,7 @@ public class MHorarioAdmin {
     @Column(nullable = false)
     LocalDate finperiodo;
 
-    @Column(length = 15)
+    @Column(length = 150)
     String recurrenciadiaadmin;
     
     @Column(length = 5)

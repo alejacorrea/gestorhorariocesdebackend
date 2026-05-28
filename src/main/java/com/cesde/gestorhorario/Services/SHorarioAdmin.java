@@ -70,6 +70,10 @@ public class SHorarioAdmin {
                 nuevoRegistro.setFinperiodo(mHorarioAdmin.getFinperiodo());
                 nuevoRegistro.setRecurrenciadiaadmin(mHorarioAdmin.getRecurrenciadiaadmin());
                 nuevoRegistro.setActivo(mHorarioAdmin.getActivo());
+                nuevoRegistro.setPersona(mHorarioAdmin.getPersona());
+                nuevoRegistro.setSede(mHorarioAdmin.getSede());
+                nuevoRegistro.setAula(mHorarioAdmin.getAula());
+                nuevoRegistro.setMateria(mHorarioAdmin.getMateria());
                 return iHorarioAdmin.save(nuevoRegistro);
             } else
                 throw new Exception("No se puede modificar porque el Horario Admin no esta registrado");

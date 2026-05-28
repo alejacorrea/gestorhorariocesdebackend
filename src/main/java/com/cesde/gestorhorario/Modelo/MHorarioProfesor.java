@@ -10,7 +10,7 @@ import jakarta.persistence.ManyToOne;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-@Entity
+@Entity (name = "horarioprofesor")
 public class MHorarioProfesor {
 
     //Atributos
@@ -33,7 +33,7 @@ public class MHorarioProfesor {
     @Column(length = 15, nullable = false)
     String instituto;
 
-    @Column(length = 15, nullable = false)
+    @Column(length = 150, nullable = false)
     String recurrenciaDiaProfesor;
 
     @Column(nullable = false)

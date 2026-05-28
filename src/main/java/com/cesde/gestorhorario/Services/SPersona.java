@@ -64,7 +64,9 @@ public class SPersona {
                 nuevoRegistro.setIdentificacionPersona(mPersona.getIdentificacionPersona());
                 nuevoRegistro.setNombrePersona(mPersona.getNombrePersona());
                 nuevoRegistro.setCorreoPersona(mPersona.getCorreoPersona());
-                nuevoRegistro.setContrasenaPersona(mPersona.getContrasenaPersona());
+                if (mPersona.getContrasenaPersona() != null && !mPersona.getContrasenaPersona().trim().isEmpty()) {
+                    nuevoRegistro.setContrasenaPersona(mPersona.getContrasenaPersona());
+                }
                 nuevoRegistro.setActivo(mPersona.getActivo());
                 return iPersona.save(nuevoRegistro);
             } else
